@@ -41,3 +41,6 @@ jobs:
 
       - name: S3 버킷에 빌드된 파일 업로드
         run: aws s3 cp ./dist s3://instagram-web-hyunsik --recursive
+
+      - name: Cloudfront 캐시 무효화
+        run: aws cloudfront create-invalidation --distribution-id E3BW3C4WIUQ82R --paths "/*"
