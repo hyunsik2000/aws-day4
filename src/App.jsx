@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <>현식</>;
+  return <>AWS CICD 테스트 </>;
 }
 
 export default App;
