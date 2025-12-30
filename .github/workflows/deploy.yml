@@ -19,4 +19,7 @@ jobs:
         run: npm run build # 깃헙 액션에서도 npm 수행 가능
 
       - name: Debugging
-        run: ls
+        run: |
+          ls 
+          cd dist
+          ls
